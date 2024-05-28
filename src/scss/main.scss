@@ -1,0 +1,122 @@
+.vega-embed {
+  font-family: $font;
+
+  /*
+     * OVERFLOW MENU
+     */
+  div.vega-actions {
+    top: 26px;
+    right: 0px;
+    padding: 0px;
+    background: $layer-01;
+    border: none;
+    box-shadow: 0 2px 6px $cds-shadow;
+    border-radius: 0px;
+    animation: none;
+    user-select: none;
+
+    // Remove overflow menu arrow
+    &:before,
+    &:after {
+      content: none;
+    }
+
+    // Links
+    a {
+      font-family: $font;
+      font-weight: normal;
+      color: $text-secondary;
+      padding: 11px 16px;
+      transition: background-color 0.11s cubic-bezier(0, 0, 0.38, 0.9);
+
+      &:hover {
+        background-color: $layer-hover-01;
+        color: $text-secondary;
+      }
+
+      &:active,
+      &:focus {
+        outline: 2px solid $focus;
+        outline-offset: -2px;
+        background-color: $layer-hover-01;
+        color: $text-secondary;
+      }
+    }
+  }
+
+  /*
+     * OVERFLOW MENU - TRIGGER
+     */
+  details {
+    summary {
+      opacity: 1;
+      border-radius: 0px;
+      background-color: transparent;
+      border-color: transparent;
+      color: #fff;
+      box-shadow: none;
+      transition: background-color 0.11s cubic-bezier(0, 0, 0.38, 0.9);
+
+      &:hover {
+        background-color: $layer-hover-01;
+        border-color: $layer-hover-01;
+        transition: background-color 0.11s cubic-bezier(0, 0, 0.38, 0.9);
+      }
+
+      &:active {
+        box-shadow: none;
+      }
+
+      // Three dots icon
+      svg {
+        width: 12px;
+        height: 12px;
+        transform: rotate(90deg);
+        color: $layer-selected-inverse;
+      }
+    }
+
+    // When menu is open
+    &[open] summary {
+      background-color: $layer-01;
+      border-color: $layer-01;
+      box-shadow: 0 2px 6px $cds-shadow;
+      transition: background-color 0.11s cubic-bezier(0, 0, 0.38, 0.9);
+    }
+  }
+}
+
+/*
+   * TOOLTIPS
+   */
+.vg-tooltip {
+  background-color: $layer-02 !important;
+  color: $layer-selected-inverse !important;
+  border: none !important;
+  box-shadow: 0 1px 6px #0003 !important;
+  border-radius: 0px !important;
+  padding: 4px !important;
+
+  table {
+    margin: -4px;
+
+    tr {
+      td {
+        border-bottom: 1px solid $layer-accent-03;
+        padding: 4px 6px !important;
+
+        &.key {
+          text-align: left !important;
+        }
+
+        &.value {
+          color: $layer-selected-inverse !important;
+        }
+      }
+
+      &:last-child td {
+        border-bottom: none;
+      }
+    }
+  }
+}
