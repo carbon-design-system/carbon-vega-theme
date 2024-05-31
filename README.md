@@ -36,23 +36,23 @@ This bundle adds extra styling to the theme, which applies to chart tooltips and
 **White theme:**
 
 ```html
-<link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/dataviz/carbon-vega-theme/0.0.1/css/white.css" />
+<link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/dataviz/carbon-vega-theme/latest/css/white.css" />
 ```
 
 **g10:**
 
 ```html
-<link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/dataviz/carbon-vega-theme/0.0.1/css/g10.css" />
+<link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/dataviz/carbon-vega-theme/latest/css/g10.css" />
 ```
 
 **g90:**
 
 ```html
-<link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/dataviz/carbon-vega-theme/0.0.1/css/g90.css" />
+<link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/dataviz/carbon-vega-theme/latest/css/g90.css" />
 ```
 
 **g100:**
 
 ```html
-<link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/dataviz/carbon-vega-theme/0.0.1/css/g100.css" />
+<link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/dataviz/carbon-vega-theme/latest/css/g100.css" />
 ```
